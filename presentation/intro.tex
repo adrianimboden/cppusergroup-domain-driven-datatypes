@@ -1,0 +1,95 @@
+\section{Intro}
+
+\begin{frame}[fragile]
+	\frametitle{Intro}
+	\begin{itemize}
+		\item Wir haben genug Zeit
+		\item Der Hauptteil soll Learning by Doing sein
+		\item Diskussionen sind explizit erwünscht
+	\end{itemize}
+
+	\vspace{5mm}
+	Toolchain:
+	\begin{itemize}
+		\item C++17
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Vergleich Mathematik}
+	\begin{quote}
+		In der Mathematik versteht man unter Definitionsmenge oder Definitionsbereich die Menge mit genau den Elementen, unter denen die Funktion definiert bzw. die Aussage erfüllbar ist.
+	\end{quote}
+	\begin{figure}
+		\begin{minipage}{.3\textwidth}
+			\includesvg[width=\linewidth]{img/injection.svg}
+			\caption{wikipedia.org}
+		\end{minipage}\hspace{10mm}%
+		\begin{minipage}{0.6\textwidth}
+			\inputminted[fontsize=\small,firstline=5,lastline=17,framesep=5mm]{cpp}{../code/src/01_intro.cpp}
+		\end{minipage}%
+	\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Datentyp mit Einschränkung}
+	\inputminted[fontsize=\small,firstline=5,lastline=17,framesep=5mm]{cpp}{../code/src/02_intro.cpp}
+\end{frame}
+
+\begin{frame}[t]
+	\frametitle{Vergleich}
+	\begin{figure}
+		\begin{minipage}[t]{.3\textwidth}
+			\inputminted[fontsize=\scriptsize,firstline=5,lastline=5,framesep=5mm]{cpp}{../code/src/01_intro.cpp}
+			\inputminted[fontsize=\scriptsize,firstline=4,lastline=4,framesep=5mm]{cpp}{../code/src/01_intro.cpp}
+			\inputminted[fontsize=\scriptsize,firstline=4,lastline=4,framesep=5mm]{cpp}{../code/src/01_intro.cpp}
+			\inputminted[fontsize=\scriptsize,firstline=4,lastline=4,framesep=5mm]{cpp}{../code/src/01_intro.cpp}
+			\inputminted[fontsize=\scriptsize,firstline=4,lastline=4,framesep=5mm]{cpp}{../code/src/01_intro.cpp}
+			\inputminted[fontsize=\scriptsize,firstline=8,lastline=17,framesep=5mm]{cpp}{../code/src/01_intro.cpp}
+			\vspace{1mm}
+			\inputminted[fontsize=\scriptsize,firstline=19,lastline=22,framesep=5mm]{cpp}{../code/src/01_intro.cpp}
+		\end{minipage}\hspace{20mm}%
+		\pause{}
+		\begin{minipage}[t]{.5\textwidth}
+			\inputminted[fontsize=\scriptsize,firstline=20,lastline=24,framesep=5mm]{cpp}{../code/src/02_intro.cpp}
+			\inputminted[fontsize=\scriptsize,firstline=4,lastline=4,framesep=5mm]{cpp}{../code/src/01_intro.cpp}
+			\pause{}
+			\inputminted[fontsize=\scriptsize,firstline=28,lastline=35,framesep=5mm]{cpp}{../code/src/02_intro.cpp}
+			\pause{}
+			\inputminted[fontsize=\scriptsize,firstline=4,lastline=4,framesep=5mm]{cpp}{../code/src/01_intro.cpp}
+			\inputminted[fontsize=\scriptsize,firstline=4,lastline=4,framesep=5mm]{cpp}{../code/src/01_intro.cpp}
+			\inputminted[fontsize=\scriptsize,firstline=37,lastline=40,framesep=5mm]{cpp}{../code/src/02_intro.cpp}
+		\end{minipage}%
+	\end{figure}
+\end{frame}
+
+\begin{frame}[t]
+	\frametitle{Vergleich}
+	\begin{figure}
+		\begin{minipage}[t]{.3\textwidth}
+			\vspace{27mm}
+			\inputminted[fontsize=\tiny,firstline=3,lastline=21,framesep=5mm]{cpp}{../code/src/03a_intro.cpp}
+		\end{minipage}\hspace{20mm}%
+		\pause{}
+		\begin{minipage}[t]{.5\textwidth}
+			\inputminted[fontsize=\tiny,firstline=3,lastline=13,framesep=5mm]{cpp}{../code/src/03b_intro.cpp}
+
+			\pause{}
+			\inputminted[fontsize=\tiny,firstline=14,lastline=32,framesep=5mm]{cpp}{../code/src/03b_intro.cpp}
+		\end{minipage}%
+	\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Anwendung Zahlen}
+	\inputminted[fontsize=\tiny,firstline=5,lastline=30,framesep=5mm]{cpp}{../code/src/ausblick/01.cpp}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Anwendung Zahlen Erweitert}
+	\inputminted[fontsize=\tiny,firstline=55,lastline=63,framesep=5mm]{cpp}{../code/src/ausblick/02.cpp}
+	\inputminted[fontsize=\tiny,firstline=65,lastline=65,framesep=5mm]{cpp}{../code/src/ausblick/02.cpp}
+	\inputminted[fontsize=\tiny,firstline=67,lastline=67,framesep=5mm]{cpp}{../code/src/ausblick/02.cpp}
+	\inputminted[fontsize=\tiny,firstline=69,lastline=69,framesep=5mm]{cpp}{../code/src/ausblick/02.cpp}
+	\inputminted[fontsize=\tiny,firstline=71,lastline=72,framesep=5mm]{cpp}{../code/src/ausblick/02.cpp}
+\end{frame}

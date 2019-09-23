@@ -1,0 +1,72 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{beamer}
+\mode<presentation>{%
+\usetheme{default}
+\usecolortheme{crane}
+\setbeamertemplate{footline}[page number]
+\setbeamertemplate{navigation symbols}{}
+}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{minted}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyvrb}
+\usepackage{svg}
+\usepackage{subcaption}
+\usepackage[font=tiny]{caption}
+\captionsetup[figure]{name=Quelle}
+
+\title[]{Datentypen, die den Definitionsbereich genau abbilden}
+\subtitle[]{}
+
+\author{Adrian Imboden}
+\institute[]
+{%
+\smallskip\\
+\textit{adi@thingdust.com}\\
+\textit{adrian.imboden@komaxgroup.com}
+\medskip\\
+\url{https://github.com/adrianimboden/cppusergroup-datatypes-with-domain}\\
+}
+\date{\today} % Date, can be changed to a custom date
+\begin{document}
+
+\begin{frame}
+	\titlepage%
+\end{frame}
+
+\AtBeginSection[]{%
+	\begin{frame}
+		\frametitle{Inhalt}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+\begin{frame}
+	\frametitle{Inhalt}
+	\tableofcontents[]
+\end{frame}
+
+\include{content}
+
+
+\begin{frame}[fragile]
+	\begin{figure}[ht]
+		\centering
+	\end{figure}
+	\Huge{\centerline{The End}}
+\end{frame}
+
+\end{document}
