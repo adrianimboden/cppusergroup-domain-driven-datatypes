@@ -1,0 +1,14 @@
+Value Typen in der Praxis
+
+Wir verwenden verschiedene Value Typen im täglichen Programmiergebrauch. Zum Beispiel int, std::string, std::vector, char und noch viele mehr.
+
+Doch wie oft sehen wir Value Typen die unsere Domäne abbilden, wie z.B. Person, Address, Age, Length oder Temperature?
+Meistens sind diese Typen ausschliesslich Heap-Alloziert und oft noch in komplexe Typ Hierarchien integriert. Und wenn nicht, dann ist eine Temperatur einfach ein "int".
+Mit anderen Worten: Genau das Gegenteil von fast allen Typen in der Sprache und der Standardbibliothek.
+
+C++ gibt uns im Gegensatz zu den meisten anderen populären Programmiersprachen die Möglichkeit solche Typen sauber zu designen. Ganz nach dem Motto "Do it like an int would do".
+
+Konkret werden wir einige einfache Anwendunsfälle sehen und auch selber Hand anlegen um ein Gespür für solche Typen zu bekommen.
+
+
+https://binji.github.io/wasm-clang/
