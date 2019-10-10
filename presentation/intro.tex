@@ -4,19 +4,50 @@
 	\frametitle{Intro}
 	\begin{itemize}
 		\item Wir haben genug Zeit
-		\item Der Hauptteil soll Learning by Doing sein
+		\item Der Hauptteil wird Hands-On sein
 		\item Diskussionen sind explizit erwünscht
-	\end{itemize}
-
-	\vspace{5mm}
-	Toolchain:
-	\begin{itemize}
-		\item C++17
 	\end{itemize}
 \end{frame}
 
+\section{Motivation}
+\begin{frame}[fragile,t]
+	\frametitle{Motivation}
+	\onslide<2>{\inputminted[firstline=3,lastline=11,framesep=5mm]{python}{../code/warum.py}}
+	\onslide<1->{\inputminted[firstline=12,lastline=14,framesep=5mm]{python}{../code/warum.py}}
+\end{frame}
+
+\begin{frame}[fragile,t]
+	\frametitle{Motivation}
+	\only<1>{\inputminted[fontsize=\small,firstline=1,framesep=5mm]{java}{../code/warum.java}}
+	\only<2>{\inputminted[fontsize=\small,firstline=1,framesep=5mm]{csharp}{../code/warum.cs}}
+\end{frame}
+
+\section{Basics}
+
 \begin{frame}[fragile]
-	\frametitle{Vergleich Mathematik}
+	\frametitle{Value Type}
+	Alles was sich wie ein \enquote{int} verhält:
+	\begin{itemize}
+		\item Kopierbar
+		\item Kein (sichtbares) sharing
+		\item Keine Werte ausserhalb vom Wertebereich (nicht nullable)
+		\item const ist transitiv
+	\end{itemize}
+	\pause{}
+	Konkret:
+	\begin{itemize}
+		\item int
+		\item std::string
+		\item std::vector
+		\item std::optional
+		\item std::variant
+	\end{itemize}
+	\pause{}
+	Kurz: fast alle Typen in der Standardlibrary
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Definitionsmenge}
 	\begin{quote}
 		In der Mathematik versteht man unter Definitionsmenge oder Definitionsbereich die Menge mit genau den Elementen, unter denen die Funktion definiert bzw. die Aussage erfüllbar ist.
 	\end{quote}
@@ -25,6 +56,7 @@
 			\includesvg[width=\linewidth]{img/injection.svg}
 			\caption{wikipedia.org}
 		\end{minipage}\hspace{10mm}%
+		\pause%
 		\begin{minipage}{0.6\textwidth}
 			\inputminted[fontsize=\small,firstline=5,lastline=17,framesep=5mm]{cpp}{../code/src/01_intro.cpp}
 		\end{minipage}%
@@ -32,7 +64,7 @@
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{Datentyp mit Einschränkung}
+	\frametitle{Datentyp für Definitionsmenge}
 	\inputminted[fontsize=\small,firstline=5,lastline=17,framesep=5mm]{cpp}{../code/src/02_intro.cpp}
 \end{frame}
 
@@ -80,16 +112,38 @@
 	\end{figure}
 \end{frame}
 
+
 \begin{frame}[fragile]
-	\frametitle{Anwendung Zahlen}
+	\frametitle{Realbeispiele aus der Praxis}
+	\begin{itemize}
+		\item Utf8String
+		\item Message
+		\item Milliesconds
+		\item Configuration
+	\end{itemize}
+\end{frame}
+
+\section{Challenge für die, die wollen}
+\begin{frame}[fragile]
+	\frametitle{Beispiel Zahlen}
 	\inputminted[fontsize=\tiny,firstline=5,lastline=30,framesep=5mm]{cpp}{../code/src/ausblick/01.cpp}
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{Anwendung Zahlen Erweitert}
+	\frametitle{Beispiel Zahlen Erweitert}
 	\inputminted[fontsize=\tiny,firstline=55,lastline=63,framesep=5mm]{cpp}{../code/src/ausblick/02.cpp}
 	\inputminted[fontsize=\tiny,firstline=65,lastline=65,framesep=5mm]{cpp}{../code/src/ausblick/02.cpp}
 	\inputminted[fontsize=\tiny,firstline=67,lastline=67,framesep=5mm]{cpp}{../code/src/ausblick/02.cpp}
 	\inputminted[fontsize=\tiny,firstline=69,lastline=69,framesep=5mm]{cpp}{../code/src/ausblick/02.cpp}
 	\inputminted[fontsize=\tiny,firstline=71,lastline=72,framesep=5mm]{cpp}{../code/src/ausblick/02.cpp}
+\end{frame}
+
+\section{Hands-On}
+
+\begin{frame}[fragile]
+	\frametitle{Hands-on}
+	\begin{figure}
+		\includegraphics[width=0.6\linewidth]{img/hands_on.jpg}
+		\caption{https://www.pinterest.com}
+	\end{figure}%
 \end{frame}
